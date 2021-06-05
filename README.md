@@ -5,6 +5,10 @@
 
 Avec taille du mot de passe changeable !
 
+__Dépendences :__
+
+```pip install colorama```
+
 💖 Enjoy
 
 🎫 Mon Discord: Gabin#7955
