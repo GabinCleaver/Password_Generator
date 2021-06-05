@@ -1,10 +1,15 @@
 import random
 import string
+from colorama import Fore, init
 
-total = string.ascii_letters + string.digits + string.punctuation
+init()
 
-length = int(input("Entrez la taille du mot de passe: "))
+try:
+    total = string.ascii_letters + string.digits + string.punctuation
 
-password = "".join(random.sample(total, length))
+    length = int(input(Fore.YELLOW + "Entrez la taille du mot de passe: "))
+    password = "".join(random.sample(total, length))
 
-print("Voici le mot de passe généré: " + password)
+    print(Fore.GREEN + "Voici le mot de passe généré: " + password)
+except:
+    print(Fore.RED + "Erreur dans la génération du mot de passe.")
